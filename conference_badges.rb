@@ -15,3 +15,4 @@ def assign_rooms(speakers,room)
   "Hello, #{name}! You'll be assigned to room #{room}!
 end
 
+d
