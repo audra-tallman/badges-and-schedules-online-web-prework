@@ -1,22 +1,27 @@
 speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-rooms = [1, 2, 3, 4, 5, 6, 7]
-def conference_badges(speakers)
-  speakers.list
-end
 
-def badge_maker(speakers)
-  "Hello, my name is #{speakers}."
+def badge_maker(name)
+  "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(speakers)
-  array_of_names = (badge_maker).to_a
+  speakers.map do |speaker|
+    "Hello, my name is #{speaker}."
+  end
 end
 
-def assign_rooms(speakers,room)
-  speakers.each {|name| room(1..7)}
-  "Hello, #{name}! You'll be assigned to room #{room}!"
+def assign_rooms(speakers)
+  speakers.each_with_index.map do |speaker,index|
+  "Hello, #{speaker}! You'll be assigned to room #{index+1}!"
+  end
 end
 
-def printer
-  puts assign_rooms
+def printer(speakers)
+  batch_badge_creator(speakers).each do |badge|
+  puts badge 
+end
+
+assign_rooms(speakers).each do |assignment|
+  puts assignment
+end
 end
