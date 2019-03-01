@@ -1,10 +1,11 @@
 speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 rooms = [1, 2, 3, 4, 5,]
 def conference_badges(speakers)
+  speakers.list
 end
 
-def badge_maker(name)
-  "Hello, my name is #{name}."
+def badge_maker(speakers)
+  "Hello, my name is #{speakers}."
 end
 
 def batch_badge_creator(array_of_names)
