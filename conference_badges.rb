@@ -8,7 +8,7 @@ def badge_maker(speakers)
   "Hello, my name is #{speakers}."
 end
 
-def batch_badge_creator(array_of_names)
+def batch_badge_creator(speakers)
   array_of_names = (badge_maker).to_a
 end
 
