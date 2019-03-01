@@ -14,4 +14,3 @@ def assign_rooms(speakers,room)
   speakers.each {|name| room(1..7)}
   "Hello, #{name}! You'll be assigned to room #{room}!"
 end
-end
